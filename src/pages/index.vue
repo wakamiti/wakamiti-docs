@@ -1,0 +1,183 @@
+<template>
+  <header>
+    <nuxt-img id="logo" src="logo-dark_2.svg" alt="Wakamiti" preview />
+  </header>
+  <main>
+    <h1>Ka mua, ka muri</h1>
+
+    <p>
+      Estamos rediseñando <strong>Wakamiti</strong> con la determinación de los grandes navegantes: una evolución que
+      nace de lo aprendido, con una arquitectura más eficiente y una mejor experiencia de usuario. Inspirados por la
+      sabiduría y el espíritu explorador de la cultura maorí, trazamos un nuevo rumbo sin perder el respeto por el
+      camino recorrido.
+    </p>
+    <p id="cta">
+      <a href="https://github.com/orgs/wakamiti/projects/1" target="_blank">
+        Hoja de ruta <Icon name="heroicons:map-solid" />
+      </a>
+      <a href="https://github.com/orgs/wakamiti/discussions/categories/anuncios" target="_blank">
+        Anuncios <Icon name="heroicons:megaphone-solid" />
+      </a>
+    </p>
+<!--    <form @submit.prevent="handleSubmit" class="subscription-form">-->
+<!--      <div class="form-row">-->
+<!--        <div class="input">-->
+<!--          <input ref="input" v-model="email" type="email" :placeholder="placeholder" @focus.prevent="reset" />-->
+<!--          <button type="submit" :disabled="submitted">➜</button>-->
+<!--          <span v-if="submitted">✔</span>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </form>-->
+  </main>
+  <Footer />
+</template>
+
+<script setup>
+// import { ref } from 'vue'
+// const message = 'Correo electrónico'
+//
+// const email = ref('')
+// const submitted = ref(false)
+// const placeholder = ref(message)
+// const input = ref(null)
+//
+// const handleSubmit = () => {
+//   console.log('Correo suscrito:', email.value)
+//   submitted.value = true
+//   email.value = ''
+//   placeholder.value = '¡Suscrito!'
+//   input.value?.blur()
+// }
+// const reset = () => {
+//   submitted.value = false
+//   placeholder.value = message
+// }
+</script>
+
+<style>
+body {
+  background: url('assets/img/pexels-thales13-31192401.jpg') no-repeat bottom center fixed;
+  background-size: cover;
+}
+header {
+  padding: 5.5rem 2rem 0 2rem;
+
+  opacity: 0;
+  animation: fadeSlideDown 1s ease-out forwards;
+  animation-delay: 0.3s;
+}
+main {
+  padding: 2rem;
+  flex: 1;
+  max-width: 600px;
+  display: block;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: var(--primary);
+  margin: 1rem auto 0;
+}
+#logo {
+  width: 100%;
+}
+p {
+  font-size: 1.01rem;
+  color: var(--light);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+
+#cta {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#cta a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid var(--primary);
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+  backdrop-filter: blur(5px);
+  color: var(--primary);
+  min-width: 120px;
+}
+#cta a:hover {
+  border: 0;
+  background-color: color-mix(in srgb, var(--primary) 70%, rgba(0,0,0,0));
+  color: var(--dark);
+  transform: scale(1.03);
+  box-shadow: 0 0 12px color-mix(in srgb, var(--primary) 50%, rgba(0,0,0,0));
+}
+#cta a > * {
+  margin-left: 10px;
+}
+#cta a:nth-child(1) {
+  opacity: 0;
+  animation: fadeSlideLeft 1s ease-out forwards;
+  animation-delay: 0.3s;
+}
+#cta a:nth-child(2) {
+  opacity: 0;
+  animation: fadeSlideRight 1s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+/*.subscription-form {
+  padding: 0 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.input {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+.input input {
+  padding: 0.75rem 2.5rem 0.75rem 1rem;
+  border: 1px solid var(--light);
+  border-radius: 999px;
+  font-size: 1rem;
+  outline: none;
+  color: var(--light);
+  background: transparent;
+}
+.input button, .input span {
+  position: absolute;
+  top: 50%;
+  right: 0.5rem;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+}
+.input button {
+  cursor: pointer;
+  color: var(--primary);
+  transition: color 0.2s ease;
+}
+.input span {
+  right: 0.9rem;
+}
+.input button[disabled] {
+  display: none;
+}
+.input button:hover {
+  opacity: 0.7;
+}*/
+</style>

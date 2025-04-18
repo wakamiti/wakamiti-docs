@@ -1,0 +1,36 @@
+.project
+.settings
+.vscode
+.factorypath
+/**/*.iml
+/**/target/
+/**/.attach_pid*
+/tmp/
+.flattened-pom.xml
+.mvn/wrapper/maven-wrapper.jar
+
+
+# Nuxt dev/build outputs
+.output
+.data
+.nuxt
+.nitro
+.cache
+dist
+
+# Node dependencies
+node_modules
+
+# Logs
+logs
+*.log
+
+# Misc
+.DS_Store
+.fleet
+.idea
+
+# Local env files
+.env
+.env.*
+!.env.example
