@@ -74,7 +74,7 @@ main {
   margin: 0 auto;
 }
 h1 {
-  font-size: 2.2rem;
+  font-size: 2.3rem;
   font-weight: 500;
   margin-bottom: 1.5rem;
   position: relative;
@@ -91,7 +91,7 @@ h1::after {
   width: 100%;
 }
 p {
-  font-size: 1.01rem;
+  font-size: 1.03rem;
   color: var(--light);
   line-height: 1.6;
   margin-bottom: 2rem;
