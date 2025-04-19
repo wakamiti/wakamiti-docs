@@ -54,7 +54,7 @@
 // }
 </script>
 
-<style>
+<style lang="scss">
 body {
   background: url('assets/img/pexels-thales13-31192401.jpg') no-repeat bottom center fixed;
   background-size: cover;
@@ -78,15 +78,17 @@ h1 {
   font-weight: 500;
   margin-bottom: 1.5rem;
   position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: var(--primary);
+    margin: 1rem auto 0;
+  }
 }
-h1::after {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 3px;
-  background-color: var(--primary);
-  margin: 1rem auto 0;
-}
+
 #logo {
   width: 100%;
 }
@@ -102,40 +104,44 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    border: 1px solid var(--primary);
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.2s, color 0.2s;
+    backdrop-filter: blur(5px);
+    color: var(--primary);
+    min-width: 120px;
+
+    &:hover {
+      border: 0;
+      background-color: color-mix(in srgb, var(--primary) 70%, rgba(0,0,0,0));
+      color: var(--dark);
+      transform: scale(1.03);
+      box-shadow: 0 0 12px color-mix(in srgb, var(--primary) 50%, rgba(0,0,0,0));
+    }
+
+    & > * {
+      margin-left: 10px;
+    }
+    &:nth-child(1) {
+      opacity: 0;
+      animation: fadeSlideLeft 1s ease-out forwards;
+      animation-delay: 0.3s;
+    }
+    &:nth-child(2) {
+      opacity: 0;
+      animation: fadeSlideRight 1s ease-out forwards;
+      animation-delay: 0.3s;
+    }
+  }
 }
-#cta a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.75rem 1.5rem;
-  border: 1px solid var(--primary);
-  border-radius: 10px;
-  text-decoration: none;
-  transition: background-color 0.2s, color 0.2s;
-  backdrop-filter: blur(5px);
-  color: var(--primary);
-  min-width: 120px;
-}
-#cta a:hover {
-  border: 0;
-  background-color: color-mix(in srgb, var(--primary) 70%, rgba(0,0,0,0));
-  color: var(--dark);
-  transform: scale(1.03);
-  box-shadow: 0 0 12px color-mix(in srgb, var(--primary) 50%, rgba(0,0,0,0));
-}
-#cta a > * {
-  margin-left: 10px;
-}
-#cta a:nth-child(1) {
-  opacity: 0;
-  animation: fadeSlideLeft 1s ease-out forwards;
-  animation-delay: 0.3s;
-}
-#cta a:nth-child(2) {
-  opacity: 0;
-  animation: fadeSlideRight 1s ease-out forwards;
-  animation-delay: 0.3s;
-}
+
 
 /*.subscription-form {
   padding: 0 0 2rem 0;

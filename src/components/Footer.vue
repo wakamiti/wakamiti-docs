@@ -11,7 +11,7 @@
   </footer>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 footer {
   bottom: 0;
   left: 0;
@@ -27,27 +27,29 @@ footer {
   opacity: 0;
   animation: fadeIn 1s ease-out forwards;
   animation-delay: 0.3s;
-}
-footer .footer-widget {
-  max-width: 300px;
-  min-width: 200px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-footer .footer-widget > * {
-  min-height: 20px;
-  max-height: 40px;
-}
-footer a {
-  display: block;
-  width: 100%;
-}
-footer a > * {
-  width: 100%;
-  height: 100%;
-}
-footer a:hover {
-  opacity: 1;
+
+  .footer-widget {
+    max-width: 300px;
+    min-width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer-widget > * {
+    min-height: 20px;
+    max-height: 40px;
+  }
+  a {
+    display: block;
+    width: 100%;
+
+    & > * {
+      width: 100%;
+      height: 100%;
+    }
+    &:hover {
+      opacity: 1;
+    }
+  }
 }
 </style>
