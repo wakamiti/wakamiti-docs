@@ -28,6 +28,6 @@ export default defineNuxtConfig({
 
   css: ["assets/css/main.css"],
   colorMode: { classSuffix: '' },
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   compatibilityDate: '2025-04-17'
 })

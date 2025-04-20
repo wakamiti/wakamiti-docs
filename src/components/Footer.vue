@@ -2,54 +2,91 @@
 <template>
   <footer>
     <div class="footer-widget">
-      <a href="https://www.iti.es" target="_blank"><nuxt-img src="ITI-logo-dark.svg" alt="ITI" preview /></a>
+      <span>Powered by:</span>
+      <div class="logos">
+        <a href="https://www.iti.es" target="_blank"><nuxt-img src="ITI-logo-dark.svg" alt="ITI" preview /></a>
+      </div>
+    </div>
+    <div class="footer-widget" style="text-align: center; height: 100%">
+      <div class="copyright">
+        <span>© {{ new Date().getFullYear() }}</span>
+      </div>
     </div>
     <div class="footer-widget">
-      <nuxt-img src="generalitat-dark.svg" alt="generalitat valenciana" preview />
-      <nuxt-img src="ivace-dark.svg" alt="ivace" preview />
+      <span>Supported by:</span>
+      <div class="logos">
+        <nuxt-img src="generalitat-dark.svg" alt="generalitat valenciana" preview />
+        <nuxt-img src="ivace-dark.svg" alt="ivace" preview />
+      </div>
     </div>
   </footer>
 </template>
 
 <style lang="scss" scoped>
 footer {
-  bottom: 0;
-  left: 0;
-  right: 0;
   padding: 1rem;
+  height: 60px;
+  font-size: 0.7rem;
   text-align: center;
-  flex-shrink: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
 
   opacity: 0;
   animation: fadeIn 1s ease-out forwards;
   animation-delay: 0.3s;
 
+
   .footer-widget {
     max-width: 300px;
     min-width: 200px;
+    margin-bottom: 0.5rem;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-  }
-  .footer-widget > * {
-    min-height: 20px;
-    max-height: 40px;
-  }
-  a {
-    display: block;
-    width: 100%;
+    text-align: left;
+    height: 100%;
 
-    & > * {
-      width: 100%;
-      height: 100%;
+    @media only screen and (max-width: 645px) {
+      &:has(.copyright) {
+        display: none;
+      }
     }
-    &:hover {
-      opacity: 1;
+
+    .copyright {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+    .logos {
+      width: 200px;
+      display: flex;
+      justify-content: space-between;
+
+      img {
+        min-height: 20px;
+        max-height: 40px;
+      }
+    }
+    span {
+      display: inline-block;
+    }
+    a {
+      display: inline-block;
+      width: 100%;
+
+      & > * {
+        width: 100%;
+        height: 100%;
+      }
+      &:hover {
+        opacity: 1;
+      }
     }
   }
 }
 </style>
+<script setup lang="ts">
+</script>

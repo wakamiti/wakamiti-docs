@@ -3,7 +3,7 @@
     <nuxt-img id="logo" src="logo-dark_2.svg" alt="Wakamiti" preview />
   </header>
   <main>
-    <h1>Ka mua, ka muri</h1>
+    <h1 title="Proverbio maorí: 'caminamos hacia el futuro con la vista en el pasado'">Ka mua, ka muri</h1>
 
     <p>
       Estamos rediseñando <strong>Wakamiti</strong> con la determinación de los grandes navegantes: una evolución que
@@ -12,12 +12,16 @@
       camino recorrido.
     </p>
     <p id="cta">
-      <a href="https://github.com/orgs/wakamiti/projects/1" target="_blank">
-        Hoja de ruta <Icon name="heroicons:map-solid" />
-      </a>
-      <a href="https://github.com/orgs/wakamiti/discussions/categories/anuncios" target="_blank">
-        Anuncios <Icon name="heroicons:megaphone-solid" />
-      </a>
+      <span class="button">
+        <a href="https://github.com/orgs/wakamiti/projects/1" target="_blank">
+          Hoja de ruta <Icon name="heroicons:map-solid" />
+        </a>
+      </span>
+      <span class="button">
+        <a href="https://github.com/orgs/wakamiti/discussions/categories/anuncios" target="_blank">
+          Anuncios <Icon name="heroicons:megaphone-solid" />
+        </a>
+      </span>
     </p>
 <!--    <form @submit.prevent="handleSubmit" class="subscription-form">-->
 <!--      <div class="form-row">-->
@@ -78,6 +82,7 @@ h1 {
   font-weight: 500;
   margin-bottom: 1.5rem;
   position: relative;
+  cursor: help;
 
   &::after {
     content: "";
@@ -105,35 +110,43 @@ p {
   flex-direction: row;
   justify-content: space-evenly;
 
-  a {
+  .button {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.75rem 1.5rem;
-    border: 1px solid var(--primary);
-    border-radius: 10px;
-    text-decoration: none;
-    transition: background-color 0.2s, color 0.2s;
+    width: 190px;
     backdrop-filter: blur(5px);
-    color: var(--primary);
-    min-width: 120px;
 
-    &:hover {
-      border: 0;
-      background-color: color-mix(in srgb, var(--primary) 70%, rgba(0,0,0,0));
-      color: var(--dark);
-      transform: scale(1.03);
-      box-shadow: 0 0 12px color-mix(in srgb, var(--primary) 50%, rgba(0,0,0,0));
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.75rem 1.5rem;
+      border: 1px solid var(--primary);
+      border-radius: 10px;
+      width: 100%;
+      text-align: center;
+      color: var(--primary);
+      text-decoration: none;
+      transition: background-color 0.2s, color 0.2s;
+
+      &:hover {
+        border: 0;
+        background-color: color-mix(in srgb, var(--primary) 70%, rgba(0, 0, 0, 0));
+        color: var(--dark);
+        transform: scale(1.02);
+        box-shadow: 0 0 12px color-mix(in srgb, var(--primary) 50%, rgba(0, 0, 0, 0));
+      }
+
+      & > * {
+        margin-left: 10px;
+      }
     }
 
-    & > * {
-      margin-left: 10px;
-    }
     &:nth-child(1) {
       opacity: 0;
       animation: fadeSlideLeft 1s ease-out forwards;
       animation-delay: 0.3s;
     }
+
     &:nth-child(2) {
       opacity: 0;
       animation: fadeSlideRight 1s ease-out forwards;
