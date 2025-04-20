@@ -60,7 +60,7 @@
 
 <style lang="scss">
 body {
-  background: url('assets/img/pexels-thales13-31192401.jpg') no-repeat bottom center fixed;
+  background: url('@/assets/img/pexels-thales13-31192401.jpg') no-repeat bottom center fixed;
   background-size: cover;
 }
 header {
