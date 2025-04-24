@@ -11,14 +11,5 @@ jobs:
       - name: Checkout main branch
         uses: actions/checkout@v4
 
-      - name: executing remote ssh commands using password
-        uses: appleboy/ssh-action@v1
-        with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USER }}
-          key: ${{ secrets.SSH_KEY }}
-          port: ${{ secrets.PORT }}
-          script: |
-            cd /var/www/wakamiti
-            git pull
-            sudo nginx -t && sudo systemctl reload nginx
+      - name: Notify deploy
+        run: ${{ secrets.DEPLOY_PING }}
