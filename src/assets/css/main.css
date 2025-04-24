@@ -18,7 +18,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    max-width: 780px;
+    max-width: 760px;
     width: 100%;
 }
 
