@@ -7,8 +7,7 @@
 
     <p>
       Estamos rediseñando <strong>Wakamiti</strong> con la determinación de los grandes navegantes: una evolución que
-      nace de lo aprendido, con una arquitectura más eficiente y una mejor experiencia de usuario. Trazamos un nuevo
-      rumbo sin perder el respeto por el camino recorrido.
+      nace de lo aprendido, con una arquitectura más eficiente y una mejor experiencia de usuario.
     </p>
     <p>
       Mientras tanto, puedes seguir nuestra travesía a través de la hoja de ruta, o mantenerte al día con las nuevas
