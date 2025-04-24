@@ -31,3 +31,6 @@ jobs:
           publish_dir: ./dist
           publish_branch: deploy
           commit_message: "Deploy: ${{ github.sha }}"
+
+      - name: Notify deploy
+        run: ${{ secrets.DEPLOY_PING }}
