@@ -33,4 +33,4 @@ jobs:
           commit_message: "Deploy: ${{ github.sha }}"
 
       - name: Notify deploy
-        run: ${{ secrets.DEPLOY_PING }}
+        run: ${{ secrets.DEPLOY_PING }} -s
