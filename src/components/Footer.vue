@@ -54,6 +54,7 @@ footer {
         display: none;
       }
       flex-basis: 100%;
+      align-items: center;
     }
 
     .copyright {
