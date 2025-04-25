@@ -7,7 +7,7 @@
         <a href="https://www.iti.es" target="_blank"><nuxt-img src="ITI-logo-dark.svg" alt="ITI" preview /></a>
       </div>
     </div>
-    <div class="footer-widget" style="text-align: center; height: 100%">
+    <div class="footer-widget" style="text-align: center; height: 100%; width: 50px !important">
       <div class="copyright">
         <span>© {{ new Date().getFullYear() }}</span>
       </div>
@@ -25,13 +25,15 @@
 <style lang="scss" scoped>
 footer {
   padding: 1rem;
-  height: 60px;
+  /*height: 60px;*/
   font-size: 0.7rem;
   text-align: center;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 
   opacity: 0;
   animation: fadeIn 1s ease-out forwards;
@@ -39,8 +41,7 @@ footer {
 
 
   .footer-widget {
-    max-width: 300px;
-    min-width: 200px;
+    /*max-width: 100%;*/
     margin-bottom: 0.5rem;
     display: flex;
     flex-direction: column;
@@ -48,10 +49,11 @@ footer {
     text-align: left;
     height: 100%;
 
-    @media only screen and (max-width: 645px) {
+    @media (max-width: 540px) {
       &:has(.copyright) {
         display: none;
       }
+      flex-basis: 100%;
     }
 
     .copyright {

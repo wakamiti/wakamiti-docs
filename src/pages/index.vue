@@ -111,11 +111,18 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 
   .button {
     display: flex;
+    flex-basis: 100%;
     width: 190px;
     backdrop-filter: blur(5px);
+
+    @include respond-above(xs) {
+      flex-basis: auto;
+    }
 
     a {
       display: flex;
@@ -156,6 +163,7 @@ p {
     }
   }
 }
+
 
 
 /*.subscription-form {
