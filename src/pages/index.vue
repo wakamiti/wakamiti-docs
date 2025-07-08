@@ -3,7 +3,7 @@
     <nuxt-img id="logo" src="logo-dark_2.svg" alt="Wakamiti" preview />
   </header>
   <main>
-    <h1 title="Proverbio maorí: 'caminamos hacia el futuro con la vista en el pasado'">Ka mua, ka muri</h1>
+    <h1 title="caminamos hacia el futuro con la vista en el pasado">Ka mua, ka muri</h1>
 
     <p>
       Estamos rediseñando <strong>Wakamiti</strong> con la determinación de los grandes navegantes: una evolución que
@@ -84,7 +84,6 @@ h1 {
   font-weight: 500;
   margin-bottom: 1.5rem;
   position: relative;
-  cursor: help;
 
   &::after {
     content: "";
