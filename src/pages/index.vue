@@ -10,21 +10,33 @@
       nace de lo aprendido, con una arquitectura más eficiente y una mejor experiencia de usuario.
     </p>
     <p>
-      Mientras tanto, puedes seguir nuestra travesía a través de la hoja de ruta, o mantenerte al día con las nuevas
-      versiones en nuestro canal de anuncios.
+      Este viaje de evolución acaba de comenzar. Explora el corazón del proyecto: accede a nuestro espacio dedicado
+      para descubrir la hoja de ruta, el repositorio y solicitar información.
     </p>
     <p id="cta">
-      <span class="button">
-        <a href="https://github.com/orgs/wakamiti/projects/1" target="_blank">
-          Hoja de ruta <Icon name="heroicons:map-solid" />
-        </a>
-      </span>
-      <span class="button">
-        <a href="https://github.com/orgs/wakamiti/discussions/categories/anuncios" target="_blank">
-          Anuncios <Icon name="heroicons:megaphone-solid" />
+      <span class="button" style="width: 223px">
+        <a href="https://www.iti.es/wakamiti/" target="_blank">
+          Espacio Wakamiti <Icon name="heroicons:arrow-top-right-on-square-solid" />
         </a>
       </span>
     </p>
+<!--    <p>-->
+<!--      Mientras tanto, puedes seguir nuestra travesía a través de la hoja de ruta, o mantenerte al día con las nuevas-->
+<!--      versiones en nuestro canal de anuncios.-->
+<!--    </p>-->
+<!--    <p id="cta">-->
+<!--      <span class="button">-->
+<!--        <a href="https://github.com/orgs/wakamiti/projects/1" target="_blank">-->
+<!--          Hoja de ruta <Icon name="heroicons:map-solid" />-->
+<!--        </a>-->
+<!--      </span>-->
+<!--      <span class="button">-->
+<!--        <a href="https://github.com/orgs/wakamiti/discussions/categories/anuncios" target="_blank">-->
+<!--          Anuncios <Icon name="heroicons:megaphone-solid" />-->
+<!--        </a>-->
+<!--      </span>-->
+<!--    </p>-->
+
 <!--    <form @submit.prevent="handleSubmit" class="subscription-form">-->
 <!--      <div class="form-row">-->
 <!--        <div class="input">-->
