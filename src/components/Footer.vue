@@ -7,9 +7,9 @@
         <a href="https://www.iti.es" target="_blank"><nuxt-img src="ITI-logo-dark.svg" alt="ITI" preview /></a>
       </div>
     </div>
-    <div class="footer-widget" style="text-align: center; height: 100%; width: 50px !important">
+    <div class="footer-widget" style="text-align: center; height: 100%; width: 100px !important">
       <div class="copyright">
-        <span>© {{ new Date().getFullYear() }}</span>
+        <span>© 2025 ITI</span>
       </div>
     </div>
     <div class="footer-widget">

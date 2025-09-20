@@ -149,10 +149,10 @@ p {
       transition: background-color 0.2s, color 0.2s;
 
       &:hover {
-        border: 0;
+        border-color: color-mix(in srgb, var(--primary) 30%, rgba(0, 0, 0, 0));
         background-color: color-mix(in srgb, var(--primary) 70%, rgba(0, 0, 0, 0));
         color: var(--dark);
-        transform: scale(1.02);
+        transform: scale(1);
         box-shadow: 0 0 12px color-mix(in srgb, var(--primary) 50%, rgba(0, 0, 0, 0));
       }
 
