@@ -1,26 +1,39 @@
 # wakamiti-doc
 Wakamiti documentation site
 
+## Astro
 
-## Nuxt
+Look at the [Astro documentation](https://docs.astro.build) to learn more.
 
+### Install pnpm
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Recommended (Node.js 22+):
+
+```bash
+corepack enable
+corepack prepare pnpm@latest --activate
+pnpm -v
+```
+
+Alternative:
+
+```bash
+npm install -g pnpm
+pnpm -v
+```
 
 ### Setup
 
-Make sure to install dependencies:
-
 ```bash
-npm install
+pnpm install
 ```
 
 ### Development Server
 
-Start the development server on `http://localhost:3000`:
+Start the development server on `http://localhost:4321`:
 
 ```bash
-npm run dev -- -o
+pnpm run dev
 ```
 
 ### Production
@@ -28,13 +41,11 @@ npm run dev -- -o
 Build the application for production:
 
 ```bash
-npm run build
+pnpm run build
 ```
 
 Locally preview production build:
 
 ```bash
-npm run preview
+pnpm run preview
 ```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

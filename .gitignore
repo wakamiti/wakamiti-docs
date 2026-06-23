@@ -10,11 +10,8 @@
 .mvn/wrapper/maven-wrapper.jar
 
 
-# Nuxt dev/build outputs
-.output
-.data
-.nuxt
-.nitro
+# Astro dev/build outputs
+.astro
 .cache
 dist
 
