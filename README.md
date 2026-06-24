@@ -1,26 +1,59 @@
 # wakamiti-doc
 Wakamiti documentation site
 
+**Multilenguage support:** Spanish (default) and English.
 
-## Nuxt
+## Astro
 
+Look at the [Astro documentation](https://docs.astro.build) to learn more.
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+### Multilenguage Structure
+
+The site supports Spanish and English via Astro's i18n routing:
+
+- **Spanish (default):** `/` and `/es/`
+- **English:** `/en/`
+
+Content structure:
+```
+src/pages/
+├── es/
+│   └── index.astro    (Spanish)
+└── en/
+    └── index.astro    (English)
+```
+
+A language switcher is available in the top-right corner.
+
+### Install pnpm
+
+Recommended (Node.js 26+):
+
+```bash
+corepack enable
+corepack prepare pnpm@latest --activate
+pnpm -v
+```
+
+Alternative:
+
+```bash
+npm install -g pnpm
+pnpm -v
+```
 
 ### Setup
 
-Make sure to install dependencies:
-
 ```bash
-npm install
+pnpm install
 ```
 
 ### Development Server
 
-Start the development server on `http://localhost:3000`:
+Start the development server on `http://localhost:4321`:
 
 ```bash
-npm run dev -- -o
+pnpm run dev
 ```
 
 ### Production
@@ -28,13 +61,11 @@ npm run dev -- -o
 Build the application for production:
 
 ```bash
-npm run build
+pnpm run build
 ```
 
 Locally preview production build:
 
 ```bash
-npm run preview
+pnpm run preview
 ```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

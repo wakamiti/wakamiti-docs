@@ -1,0 +1,34 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Footer from '../components/Footer.astro';
+import HomePage from '../components/HomePage.astro';
+---
+
+<BaseLayout title="Wakamiti">
+  <HomePage
+    currentLang="es"
+    content={{
+      title: "Ka mua, ka muri",
+      subtitle: "caminamos hacia el futuro con la vista en el pasado",
+      text: `
+      <p>
+        Estamos rediseñando <strong>Wakamiti</strong> con la determinación de los grandes navegantes: una evolución que 
+        nace de lo aprendido, con una arquitectura más eficiente y una mejor experiencia de usuario.
+      </p>
+      <p>
+        Este viaje de evolución acaba de comenzar. Explora el corazón del proyecto: accede a nuestro espacio dedicado 
+        para descubrir la hoja de ruta, el repositorio y solicitar información.
+      </p>
+      `,
+      buttonText: "Espacio Wakamiti"
+    }}
+  />
+  <Footer />
+</BaseLayout>
+
+<style lang="scss">
+  :global(body) {
+    background: url('/img/pexels-thales13-31192401.jpg') no-repeat bottom center fixed;
+    background-size: cover;
+  }
+</style>
