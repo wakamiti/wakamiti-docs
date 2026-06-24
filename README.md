@@ -7,6 +7,24 @@ Wakamiti documentation site
 
 Look at the [Astro documentation](https://docs.astro.build) to learn more.
 
+### Multilenguage Structure
+
+The site supports Spanish and English via Astro's i18n routing:
+
+- **Spanish (default):** `/` and `/es/`
+- **English:** `/en/`
+
+Content structure:
+```
+src/pages/
+├── es/
+│   └── index.astro    (Spanish)
+└── en/
+    └── index.astro    (English)
+```
+
+A language switcher is available in the top-right corner.
+
 ### Install pnpm
 
 Recommended (Node.js 26+):
