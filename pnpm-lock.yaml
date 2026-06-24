@@ -13,14 +13,14 @@ importers:
         version: 1.2.1
       astro:
         specifier: ^7.0.2
-        version: 7.0.2(@emnapi/core@1.10.0)(@emnapi/runtime@1.11.1)(@types/node@22.20.0)(sass-embedded@1.100.0)(sass@1.100.0)
+        version: 7.0.2(@emnapi/core@1.10.0)(@emnapi/runtime@1.11.1)(@types/node@26.0.0)(sass-embedded@1.100.0)(sass@1.100.0)
       astro-icon:
         specifier: ^1.1.5
         version: 1.1.5
     devDependencies:
       '@types/node':
-        specifier: ^22.14.0
-        version: 22.20.0
+        specifier: ^26.0.0
+        version: 26.0.0
       eslint:
         specifier: ^9.39.4
         version: 9.39.4
@@ -841,8 +841,8 @@ packages:
   '@types/nlcst@2.0.3':
     resolution: {integrity: sha512-vSYNSDe6Ix3q+6Z7ri9lyWqgGhJTmzRjZRqyq15N0Z/1/UnVsno9G/N40NBijoYx2seFDIl0+B2mgAb9mezUCA==}
 
-  '@types/node@22.20.0':
-    resolution: {integrity: sha512-QWlFW2wf3nTjC13/DqRnBpR4ZO36VJH/JVBkA/vcnmbTBNQIlnObqyqZE1tUR7+Ni23Lda8R1BxMfbXRpCUx5g==}
+  '@types/node@26.0.0':
+    resolution: {integrity: sha512-vf2YFi1iY9lHGwNJMs01biZFbKJkrZR1T6/MlzjhJLPdntOHLhTrDSnSVcdtvjihi4VQNlrFRIxLsDBlQpAipA==}
 
   '@types/unist@3.0.3':
     resolution: {integrity: sha512-ko/gIFJRv177XgZsZcBwnqJN5x/Gien8qNOn0D5bQU/zAzVf9Zt3BlcUiLqhV9y4ARk0GbT3tnUiPNgnTXzc/Q==}
@@ -1958,8 +1958,8 @@ packages:
   uncrypto@0.1.3:
     resolution: {integrity: sha512-Ql87qFHB3s/De2ClA9e0gsnS6zXG27SkTiSJwjCc9MebbfapQfuPzumMIUMi38ezPZVNFcHI9sUIepeQfw8J8Q==}
 
-  undici-types@6.21.0:
-    resolution: {integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==}
+  undici-types@8.3.0:
+    resolution: {integrity: sha512-j375ScV60dom+YkPFIfTLcOiPxkN/buHz5GobjLhixFuANaNs3C9l4GmrWqejgXWJ7BbJcFYpTEUkS1Ge8bpZQ==}
 
   undici@7.28.0:
     resolution: {integrity: sha512-cRZYrTDwWznlnRiPjggAGxZXanty6M8RV1ff8Wm4LWXBp7/IG8v5DnOm74DtUBp9OONpK75YlPnIjQqX0dBDtA==}
@@ -2834,15 +2834,15 @@ snapshots:
     dependencies:
       '@types/unist': 3.0.3
 
-  '@types/node@22.20.0':
+  '@types/node@26.0.0':
     dependencies:
-      undici-types: 6.21.0
+      undici-types: 8.3.0
 
   '@types/unist@3.0.3': {}
 
   '@types/yauzl@2.10.3':
     dependencies:
-      '@types/node': 22.20.0
+      '@types/node': 26.0.0
     optional: true
 
   '@ungap/structured-clone@1.3.1': {}
@@ -2885,7 +2885,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  astro@7.0.2(@emnapi/core@1.10.0)(@emnapi/runtime@1.11.1)(@types/node@22.20.0)(sass-embedded@1.100.0)(sass@1.100.0):
+  astro@7.0.2(@emnapi/core@1.10.0)(@emnapi/runtime@1.11.1)(@types/node@26.0.0)(sass-embedded@1.100.0)(sass@1.100.0):
     dependencies:
       '@astrojs/compiler-rs': 0.2.2(@emnapi/core@1.10.0)(@emnapi/runtime@1.11.1)
       '@astrojs/internal-helpers': 0.10.0
@@ -2938,8 +2938,8 @@ snapshots:
       unist-util-visit: 5.1.0
       unstorage: 1.17.5
       vfile: 6.0.3
-      vite: 8.0.16(@types/node@22.20.0)(esbuild@0.28.1)(sass-embedded@1.100.0)(sass@1.100.0)
-      vitefu: 1.1.3(vite@8.0.16(@types/node@22.20.0)(esbuild@0.28.1)(sass-embedded@1.100.0)(sass@1.100.0))
+      vite: 8.0.16(@types/node@26.0.0)(esbuild@0.28.1)(sass-embedded@1.100.0)(sass@1.100.0)
+      vitefu: 1.1.3(vite@8.0.16(@types/node@26.0.0)(esbuild@0.28.1)(sass-embedded@1.100.0)(sass@1.100.0))
       xxhash-wasm: 1.1.0
       yargs-parser: 22.0.0
       zod: 4.4.3
@@ -4080,7 +4080,7 @@ snapshots:
 
   uncrypto@0.1.3: {}
 
-  undici-types@6.21.0: {}
+  undici-types@8.3.0: {}
 
   undici@7.28.0: {}
 
@@ -4155,7 +4155,7 @@ snapshots:
       '@types/unist': 3.0.3
       vfile-message: 4.0.3
 
-  vite@8.0.16(@types/node@22.20.0)(esbuild@0.28.1)(sass-embedded@1.100.0)(sass@1.100.0):
+  vite@8.0.16(@types/node@26.0.0)(esbuild@0.28.1)(sass-embedded@1.100.0)(sass@1.100.0):
     dependencies:
       lightningcss: 1.32.0
       picomatch: 4.0.4
@@ -4163,15 +4163,15 @@ snapshots:
       rolldown: 1.0.3
       tinyglobby: 0.2.17
     optionalDependencies:
-      '@types/node': 22.20.0
+      '@types/node': 26.0.0
       esbuild: 0.28.1
       fsevents: 2.3.3
       sass: 1.100.0
       sass-embedded: 1.100.0
 
-  vitefu@1.1.3(vite@8.0.16(@types/node@22.20.0)(esbuild@0.28.1)(sass-embedded@1.100.0)(sass@1.100.0)):
+  vitefu@1.1.3(vite@8.0.16(@types/node@26.0.0)(esbuild@0.28.1)(sass-embedded@1.100.0)(sass@1.100.0)):
     optionalDependencies:
-      vite: 8.0.16(@types/node@22.20.0)(esbuild@0.28.1)(sass-embedded@1.100.0)(sass@1.100.0)
+      vite: 8.0.16(@types/node@26.0.0)(esbuild@0.28.1)(sass-embedded@1.100.0)(sass@1.100.0)
 
   web-namespaces@2.0.1: {}
 

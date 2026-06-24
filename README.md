@@ -1,13 +1,15 @@
 # wakamiti-doc
 Wakamiti documentation site
 
+**Multilenguage support:** Spanish (default) and English.
+
 ## Astro
 
 Look at the [Astro documentation](https://docs.astro.build) to learn more.
 
 ### Install pnpm
 
-Recommended (Node.js 22+):
+Recommended (Node.js 26+):
 
 ```bash
 corepack enable
