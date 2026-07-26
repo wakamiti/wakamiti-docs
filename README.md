@@ -30,8 +30,9 @@ A language switcher is available in the top-right corner.
 Recommended (Node.js 26+):
 
 ```bash
+npm install --global corepack@latest
 corepack enable
-corepack prepare pnpm@latest --activate
+corepack install
 pnpm -v
 ```
 
