@@ -11,8 +11,8 @@
   },
   "dependencies": {
     "@iconify-json/heroicons-solid": "^1.2.1",
-    "astro-icon": "^1.1.5"
     "astro": "^7.2.3",
+    "astro-icon": "^1.2.0"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.9",
