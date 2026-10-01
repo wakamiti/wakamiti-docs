@@ -5,6 +5,9 @@ allowBuilds:
 minimumReleaseAgeExclude:
   - '@rolldown/binding-darwin-x64@1.2.5'
   - '@rolldown/binding-linux-arm64-gnu@1.2.5'
-  - fast-uri@3.1.6
+  - fast-uri@3.1.8
   - js-yaml@4.3.2
   - svgo@4.1.0
+  - devalue@5.9.1 || 5.9.3
+  - undici@8.10.2
+  - brace-expansion@5.0.10 || 5.0.11 || 5.0.12
