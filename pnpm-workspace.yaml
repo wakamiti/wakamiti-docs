@@ -5,13 +5,16 @@ allowBuilds:
 minimumReleaseAgeExclude:
   - '@rolldown/binding-darwin-x64@1.2.5'
   - '@rolldown/binding-linux-arm64-gnu@1.2.5'
-  - fast-uri@3.1.8
+  - fast-uri@3.1.9
   - js-yaml@4.3.2
   - svgo@4.1.0
-  - devalue@5.9.1 || 5.9.3
-  - undici@8.10.2
-  - brace-expansion@5.0.10 || 5.0.11 || 5.0.12
+  - devalue@5.9.3
+  - undici@8.12.2
+  - brace-expansion@5.0.12
   - '@astrojs/internal-helpers@0.13.1'
   - '@astrojs/markdown-remark@7.3.6'
   - '@astrojs/markdown-satteri@0.4.7'
   - astro@7.4.7
+  - source-map-js@1.2.2
+  - sharp@0.35.5
+  - minimatch@11.0.1
