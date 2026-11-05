@@ -13,3 +13,5 @@ minimumReleaseAgeExclude:
   - brace-expansion@5.0.10 || 5.0.11 || 5.0.12
   - '@astrojs/internal-helpers@0.13.1'
   - '@astrojs/markdown-remark@7.3.6'
+  - '@astrojs/markdown-satteri@0.4.7'
+  - astro@7.4.7
