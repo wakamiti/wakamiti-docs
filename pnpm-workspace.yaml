@@ -2,6 +2,8 @@ allowBuilds:
   esbuild: true
   sharp: true
   '@parcel/watcher': true
+overrides:
+  minimatch: 11.0.1
 minimumReleaseAgeExclude:
   - '@rolldown/binding-darwin-x64@1.2.5'
   - '@rolldown/binding-linux-arm64-gnu@1.2.5'
